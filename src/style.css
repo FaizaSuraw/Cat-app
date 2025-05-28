@@ -11,28 +11,28 @@ body {
   font-size: 1.6rem;
   background-color: #fff7f3;
 }
-.cat-app-header{
+.cat-app-header {
   background-color: #fad0c4;
   padding: 7rem;
 }
-.title-header{
+.title-header {
   text-align: center;
   font-size: 5rem;
 }
-.input-form{
+.input-form {
   display: flex;
   justify-content: center;
   gap: 10rem;
   margin-top: 7rem;
 }
-.category-form-label{
+.category-form-label {
   font-size: 2.8rem;
   display: inline-block;
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.form-text{
+.form-text {
   font-family: inherit;
   font-size: 1.6rem;
   text-align: center;
@@ -58,17 +58,16 @@ button {
   color: #fff7f3;
   cursor: pointer;
 }
-.container-cat{
+.container-cat {
   max-width: 120rem;
   margin: 6rem auto;
- 
 }
 .loading {
   width: 16rem;
   height: 16rem;
   border: 15px solid transparent;
-  border-top-color: #c599b6; 
-  border-right-color: #fad0c4; 
+  border-top-color: #c599b6;
+  border-right-color: #fad0c4;
   border-bottom-color: #c599b6;
   border-left-color: #fad0c4;
   border-radius: 50%;
@@ -116,7 +115,7 @@ ol {
   font-family: inherit;
 }
 .catFacts-list li {
-  letter-spacing: .025rem;
+  letter-spacing: 0.025rem;
   font-size: 2.4rem;
 }
 
@@ -128,32 +127,32 @@ li {
   .cat-app-header {
     padding: 3rem 1.5rem;
   }
-  
+
   .title-header {
     font-size: 2.5rem;
   }
-  
+
   .input-form {
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
   }
-  
+
   .category-form {
     width: 100%;
   }
-  
+
   .form-text,
   button {
     font-size: 1.4rem;
     padding: 1rem;
   }
-  
+
   .img-wrapper {
     width: 100%;
     height: auto;
   }
-  
+
   ol {
     max-width: 100%;
     padding: 0 1rem;
@@ -171,4 +170,3 @@ li {
   max-width: 600px;
   box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
 }
-

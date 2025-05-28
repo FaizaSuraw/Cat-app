@@ -1,5 +1,5 @@
-import './style.css'
-import axios from 'axios';
+import "./style.css";
+import axios from "axios";
 
 (function () {
   const r = document.createElement("link").relList;
@@ -16,11 +16,12 @@ import axios from 'axios';
     const n = {};
     t.integrity && (n.integrity = t.integrity);
     t.referrerPolicy && (n.referrerPolicy = t.referrerPolicy);
-    n.credentials = t.crossOrigin === "use-credentials"
-      ? "include"
-      : t.crossOrigin === "anonymous"
-      ? "omit"
-      : "same-origin";
+    n.credentials =
+      t.crossOrigin === "use-credentials"
+        ? "include"
+        : t.crossOrigin === "anonymous"
+          ? "omit"
+          : "same-origin";
     return n;
   }
 
@@ -58,7 +59,7 @@ const getValidatedCount = (inputEl, max) => {
 
 // Render facts
 const renderFacts = (facts) => {
-  facts.forEach(fact => {
+  facts.forEach((fact) => {
     const li = document.createElement("li");
     li.innerText = fact;
     catFactsList.appendChild(li);
@@ -67,7 +68,7 @@ const renderFacts = (facts) => {
 
 // Render images
 const renderPhotos = (photos) => {
-  photos.forEach(photo => {
+  photos.forEach((photo) => {
     const div = document.createElement("div");
     div.classList.add("img-wrapper");
     const img = document.createElement("img");
@@ -84,7 +85,9 @@ async function fetchCatFacts() {
   showLoader();
 
   try {
-    const res = await axios.get(`https://meowfacts.herokuapp.com/?count=${count}`);
+    const res = await axios.get(
+      `https://meowfacts.herokuapp.com/?count=${count}`,
+    );
     renderFacts(res.data.data);
   } catch {
     catFactsList.innerHTML = `<p class="cat-error">Failed to fetch cat facts.</p>`;
@@ -100,7 +103,9 @@ async function fetchCatPhotos() {
   showLoader();
 
   try {
-    const res = await axios.get(`https://api.thecatapi.com/v1/images/search?limit=${count}`);
+    const res = await axios.get(
+      `https://api.thecatapi.com/v1/images/search?limit=${count}`,
+    );
     renderPhotos(res.data);
   } catch {
     catPhotosList.innerHTML = `<p class="cat-error">Failed to fetch cat photos.</p>`;

@@ -11,29 +11,43 @@
       <h1 class="title-header">The Cats App</h1>
       <form class="input-form">
         <div class="category-form">
-          <label for="numberOfCats" class="category-form-label">Number of cats facts (50 maximum)</label>
+          <label for="numberOfCats" class="category-form-label"
+            >Number of cats facts (50 maximum)</label
+          >
           <div class="category-form-input">
-            <input type="number" id="numberOfCats" class="form-text" placeholder="number of cat facts (50 max)">
+            <input
+              type="number"
+              id="numberOfCats"
+              class="form-text"
+              placeholder="number of cat facts (50 max)"
+            />
             <button id="catFacts-button">submit</button>
           </div>
         </div>
         <div class="category-form">
-          <label for="numberOfCatPhotos" class="category-form-label">Number of cats photos (10 max)</label>
+          <label for="numberOfCatPhotos" class="category-form-label"
+            >Number of cats photos (10 max)</label
+          >
           <div class="category-form-input">
-            <input type="number" id="numberOfCatPhotos" class="form-text" placeholder="number of cat photos (10 max)">
+            <input
+              type="number"
+              id="numberOfCatPhotos"
+              class="form-text"
+              placeholder="number of cat photos (10 max)"
+            />
             <button id="catPhotos-button">submit</button>
           </div>
         </div>
       </form>
     </header>
-    
+
     <div class="container-cat" id="container-cat"></div>
     <div class="loading" id="loading"></div>
-    
+
     <div class="img-container" id="image-list"></div>
-    
+
     <ol class="catFacts-list" id="catFacts-list"></ol>
-    
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
