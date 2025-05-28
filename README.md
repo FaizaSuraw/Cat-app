@@ -26,14 +26,13 @@ The Cat App is a fun and interactive web application that lets users fetch rando
 - Vite (for development and build)
 
 ## 📂 Project Structure
-
-```
-
+````
 ├── index.html
-├──src{
-├── style.css
-├── main.js
-}
+├── src/
+│   └── main.js
+    └──style.css
+├── README.md
+└── package.json
 
 ````
 
